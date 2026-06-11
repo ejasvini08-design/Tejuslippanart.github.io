@@ -1,0 +1,227 @@
+/* --- Root Palette inspired by Clay, Mud, and Mirror Elements --- */
+:root {
+    --clay-earth: #B35C37;
+    --mud-white: #F4F1EA;
+    --mirror-shine: #E0E0E0;
+    --charcoal: #2B2625;
+    --accent-gold: #D4AF37;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--mud-white);
+    color: var(--charcoal);
+}
+
+/* Lippan Border Geometric Pattern Style */
+header {
+    background: linear-gradient(135deg, var(--clay-earth), #8A4325);
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+    border-bottom: 8px dashed var(--mud-white);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    font-size: 2.8rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px var(--charcoal);
+}
+
+header p {
+    font-style: italic;
+    color: #FFD2BC;
+}
+
+/* Search Container Styling */
+.search-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    display: flex;
+    gap: 10px;
+}
+
+.search-bar {
+    width: 100%;
+    padding: 12px 20px;
+    border: 2px solid var(--clay-earth);
+    border-radius: 30px;
+    font-size: 1rem;
+    outline: none;
+}
+
+/* Gallery and Layout Grid */
+.gallery-title {
+    text-align: center;
+    margin: 2rem 0 1rem;
+    font-size: 2rem;
+    position: relative;
+}
+
+/* Simulated Mirror Border Divider */
+.gallery-title::after {
+    content: "◆ ⚪ ◆ ⚪ ◆";
+    display: block;
+    font-size: 1rem;
+    color: var(--clay-earth);
+    margin-top: 5px;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.product-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s;
+    border: 1px solid #E6DFD3;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Mirror Framework Simulation for Images */
+.product-image {
+    height: 250px;
+    background-color: #DDD;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    font-weight: bold;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+.product-image::before {
+    content: "";
+    position: absolute;
+    top: 10px; left: 10px; right: 10px; bottom: 10px;
+    border: 2px dashed rgba(255,255,255,0.6);
+    pointer-events: none;
+}
+
+/* Sample Unsplash Stock Background fallbacks */
+.style-mandala { background-image: url('https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=500&q=80'); }
+.style-peacock { background-image: url('https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?auto=format&fit=crop&w=500&q=80'); }
+.style-tree { background-image: url('https://images.unsplash.com/photo-1605721911519-3dfeb3be25e7?auto=format&fit=crop&w=500&q=80'); }
+
+.product-info {
+    padding: 1.5rem;
+}
+
+.product-title {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: var(--clay-earth);
+}
+
+.product-desc {
+    margin-bottom: 0.5rem; 
+    color:#666;
+}
+
+.product-price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--charcoal);
+    margin-bottom: 1rem;
+}
+
+/* UI Buttons */
+.btn {
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    background-color: var(--clay-earth);
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+.btn:hover {
+    background-color: #8A4325;
+}
+
+/* Custom Order Layout Container */
+.custom-section {
+    background-color: #EFEBE4;
+    max-width: 700px;
+    margin: 4rem auto;
+    padding: 2.5rem;
+    border-radius: 20px;
+    border: 3px double var(--clay-earth);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.custom-section h2 {
+    text-align: center;
+    color: var(--clay-earth);
+    margin-bottom: 1.5rem;
+}
+
+.custom-subtitle {
+    text-align: center; 
+    margin-bottom: 1.5rem; 
+    color: #555;
+}
+
+.form-group {
+    margin-bottom: 1.2rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.form-group input, .form-group textarea, .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #CCC;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.submit-form-btn {
+    background-color: var(--charcoal);
+}
+
+.submit-form-btn:hover {
+    background-color: #1a1716;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--charcoal);
+    color: var(--mud-white);
+    margin-top: 4rem;
+    font-size: 0.9rem;
+}
