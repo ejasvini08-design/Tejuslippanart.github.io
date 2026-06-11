@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KutchKala - Exquisite Lippan Art</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>KutchKala Lippan Art</h1>
+        <p>Bringing Traditional Clay & Mirror Magic to Your Modern Spaces</p>
+    </header>
+
+    <div class="search-container">
+        <input type="text" id="searchBar" class="search-bar" placeholder="Search for designs (e.g., Peacock, Mandala, Tree of Life)...">
+    </div>
+
+    <h2 class="gallery-title">Our Collection</h2>
+    <div class="products-grid" id="productGrid">
+        
+        <div class="product-card" data-name="classic mandala lippan art round">
+            <div class="product-image style-mandala">
+                <span>Mandala Circular Wall Art</span>
+            </div>
+            <div class="product-info">
+                <h3 class="product-title">Classic Mandala Mirror Art</h3>
+                <p class="product-desc">12x12 inches, heavy mirror work.</p>
+                <div class="product-price">$45.00</div>
+                <button class="btn order-btn" data-product="Classic Mandala Mirror Art">Order Now</button>
+            </div>
+        </div>
+
+        <div class="product-card" data-name="peacock traditional lippan art panel">
+            <div class="product-image style-peacock">
+                <span>The Royal Peacock Panel</span>
+            </div>
+            <div class="product-info">
+                <h3 class="product-title">Royal Peacock Lippan Panel</h3>
+                <p class="product-desc">18x24 inches, vibrant clay work.</p>
+                <div class="product-price">$85.00</div>
+                <button class="btn order-btn" data-product="Royal Peacock Lippan Panel">Order Now</button>
+            </div>
+        </div>
+
+        <div class="product-card" data-name="tree of life square modern lippan">
+            <div class="product-image style-tree">
+                <span>Tree of Life Design</span>
+            </div>
+            <div class="product-info">
+                <h3 class="product-title">Tree of Life Square Art</h3>
+                <p class="product-desc">15x15 inches, contemporary mud art.</p>
+                <div class="product-price">$60.00</div>
+                <button class="btn order-btn" data-product="Tree of Life Square Art">Order Now</button>
+            </div>
+        </div>
+
+    </div>
+
+    <section class="custom-section" id="customise">
+        <h2>✨ Request a Custom Lippan Masterpiece ✨</h2>
+        <p class="custom-subtitle">Choose your shapes, sizes, and mirror density. We bring your vision to life.</p>
+        
+        <form id="customOrderForm">
+            <div class="form-group">
+                <label for="custName">Your Name</label>
+                <input type="text" id="custName" required placeholder="Enter your full name">
+            </div>
+            
+            <div class="form-group">
+                <label for="shape">Preferred Base Shape</label>
+                <select id="shape">
+                    <option value="Circle / Round">Circular/Round Plate</option>
+                    <option value="Square Panel">Square Panel</option>
+                    <option value="Rectangle Wall Piece">Rectangular Frame</option>
+                    <option value="Hexagon Modern">Modern Hexagon</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="size">Size Requirements</label>
+                <select id="size">
+                    <option value="Small (10x10 inches)">Small (10x10 inches)</option>
+                    <option value="Medium (15x15 inches)">Medium (15x15 inches)</option>
+                    <option value="Large (24x24 inches)">Large (24x24 inches)</option>
+                    <option value="Custom Size">Custom Size (Mention below)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="details">Describe Your Custom Design (Colors, Patterns, Themes)</label>
+                <textarea id="details" rows="4" required placeholder="e.g., I want a traditional Kutchi elephant motif with bright orange background and heavy diamond-shaped mirrors..."></textarea>
+            </div>
+
+            <button type="submit" class="btn submit-form-btn">Submit Custom Order Request</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2026 KutchKala Art Studio. Handcrafted Elegance.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
